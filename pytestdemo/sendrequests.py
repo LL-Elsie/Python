@@ -1,5 +1,6 @@
 import requests
 
+
 # 定义一个类
 class SendRequests(object):
     """
@@ -62,11 +63,10 @@ if __name__ == '__main__':
         "user_name": "test01",
         "passwd": "admin123"
     }
-    
     header = None
     method = 'post'
     # 创建一个实例对象
     send = SendRequests()
     # 调用主函数run_main()
-    res = send.run_main(url=url, data=data, header=header,method=method)
+    res = send.run_main(url=url, data=data, header=header, method=method)
     print(res)
